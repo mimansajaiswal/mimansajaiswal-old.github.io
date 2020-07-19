@@ -6,10 +6,12 @@ for (i = 0; i < coll.length; i++) {
     this.classList.toggle("active");
     let content = this.parentNode.nextElementSibling;
     if (content.style.maxHeight) {
-      this.innerText = "+";
+      //this.innerHTML = "<span style='color: #cc3900;'>[TLDR]]</span>";
+      this.innerText = "[TLDR]";
       content.style.maxHeight = null;
     } else {
-      this.innerText = "-";
+      //this.innerText = "-";
+      this.innerHTML = "<span style='font-size: 1.5rem;'>-</span>";
       content.style.maxHeight = content.scrollHeight + "px";
     }
   });
