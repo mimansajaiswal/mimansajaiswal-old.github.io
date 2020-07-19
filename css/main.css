@@ -41,6 +41,10 @@
 .bold {
   font-weight: bold; }
 
+.linkcolor {
+  color: #b7410e;
+}
+
 .collapsible {
   display: grid;
   grid-template-columns: 6fr 1fr;
