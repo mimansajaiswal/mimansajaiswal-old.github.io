@@ -55,10 +55,6 @@
     font-weight: 800;
     margin: 0 0.2rem; }
 
-.collapsible a{
-  color: #cc3900;
-  font-weight: bold;}
-
   .collapsible-btn {
     background-color: transparent;
     cursor: pointer;
@@ -88,7 +84,9 @@ body {
   padding: 3rem 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #cc3900;
+  font-weight: bold; }
 
 img {
   width: 100%; }
@@ -117,17 +115,12 @@ header .header-inner {
   display: grid;
   grid-template-columns: 3fr 1.5fr;
   grid-gap: 2rem; }
-  #about .about-inner .about-desc a {
-    color: #cc3900;
-  }
   #about .about-inner .contact-info span {
     font-weight: 800;
     margin: 0 0.2rem; }
   #about .about-inner .contact-info a {
     color: #6176a9;
     font-weight: 600; }
-  #about .about-inner a {
-    color: #4f4350; }
   #about .about-inner .research {
     padding-top: 1rem; }
   #about .about-inner p {
@@ -155,15 +148,15 @@ header .header-inner {
   #experience .publications-inner ul li:first-child,
   #experience .experience-inner ul li:first-child {
     margin: 0.5rem 0 1rem 2rem; }
-  #updates .updates-inner ul li a,
-  #updates .publications-inner ul li a,
-  #updates .experience-inner ul li a,
-  #publications .updates-inner ul li a,
-  #publications .publications-inner ul li a,
-  #publications .experience-inner ul li a,
-  #experience .updates-inner ul li a,
-  #experience .publications-inner ul li a,
-  #experience .experience-inner ul li a {
+  #updates .updates-inner ul li,
+  #updates .publications-inner ul li,
+  #updates .experience-inner ul li,
+  #publications .updates-inner ul li,
+  #publications .publications-inner ul li,
+  #publications .experience-inner ul li ,
+  #experience .updates-inner ul li,
+  #experience .publications-inner ul li,
+  #experience .experience-inner ul li {
     color: #4f4350; }
 
 @media screen and (max-width: 800px) {
