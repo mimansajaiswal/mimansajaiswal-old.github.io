@@ -83,15 +83,17 @@ body {
   color: #4f4350;
   padding: 3rem 0; }
 
+#experience .experience-inner .suggestedlinks a
+{
+  color: #6176a9;
+}
+
+
 a {
   text-decoration: none;
   color: #cc3900;
   font-weight: bold; }
 
-#experience .experience-inner .suggestedlinks a
-{
-  color: #6176a9;
-}
 
 img {
   width: 100%; }
