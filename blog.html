@@ -5,96 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Mimansa Jaiswal Miscellaneous Page" />
         <link rel="icon" href="img/umlogo.png">
+        <link rel="stylesheet" href="css/blog.css" />
         <title>Mimansa Jaiswal</title>
       </head>
-<style>
-    @import url("https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;515;600;700&display=swap");
-html {
-  font-family: "Varta", sans-serif;
-  scroll-behavior: smooth;
-  line-height: 1.4; }
-
-  .container {
-  max-width: 1080px;
-  padding: 0 1.5rem;
-  margin: auto; }
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  background: #fffeff;
-  color: #4f4350;
-  padding: 3rem 0; }
-
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-p
-{
-    background:#cc3900;
-    color: white;
-    text-align: center;
-}
-
-name {
-    font-size: 2rem;
-    text-transform: uppercase; }
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
+<!--  -->
 <body>
 
 <!-- Header -->
-<h1 class="container name">
-    Mimansa: Fun Blog
-  </h1>
+<header>
+    <div class="container header-inner">
+      <h1 class="name">
+        Mimansa's Blog
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#conf">Conferences</a></li>
+          <li><a href="#tandf">Travel & Food</a></li>
+          <li><a href="#cooking">Cooking</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="container header">
+<!-- <h1 class="container name">
+    Mimansa: Fun Blog
+  </h1> -->
+
+<div class="container header" id="conf">
 <h3>I have been extremely priviledged to be able to attend conferences around the world.
     <br><i>Below are a few representative clicks of the conference and the location, from my experience.</i></h3>
 </div>
@@ -125,7 +62,7 @@ name {
 <hr>
 <br>
 
-<div class="container header">
+<div class="container header" id="tandf">
   <h3>Like any quintessential millennial, I love to travel and gobble food around the world.
     <br><i>Below are a few  representative clicks.</i></h3>
 </div>
@@ -156,7 +93,7 @@ name {
 <br>
 <hr>
 <br>
-<div class="container header">
+<div class="container header" id="cooking">
     <h3>But unlike  many millennials, at the least, <span style="color:maroon; font-weight: bold;">BEFORE COVID</span>, I love to cook and can not survive on frozen food.
       <br><i>Below are a few  clicks which represents my forays into both: baking, and savory dishes.</i></h3>
   </div>
