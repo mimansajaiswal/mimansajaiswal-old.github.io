@@ -88,6 +88,11 @@ a {
   color: #cc3900;
   font-weight: bold; }
 
+#experience .suggestedlinks a
+{
+  color: #6176a9;
+}
+
 img {
   width: 100%; }
 
