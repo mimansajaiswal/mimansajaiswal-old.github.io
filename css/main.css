@@ -106,7 +106,8 @@ header .header-inner {
     text-transform: uppercase; }
   header .header-inner nav ul {
     display: flex;
-    list-style: none; }
+    list-style: none;
+    flex-wrap: wrap; }
     header .header-inner nav ul li {
       margin: 0.5rem 1rem; }
       header .header-inner nav ul li a {
