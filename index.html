@@ -108,18 +108,30 @@
           <div class="submitted">
             <h2 class="heading-s ml-1">Submitted papers</h2>
             <ul>
+                <li>
+                <div class="collapsible">
+                  <p><span class="bold"> Evaluating Explanations: What Did You Ignore When Checking What Your Model Got Wrong or Right?</span></p>
+                  <button class="collapsible-btn">[TLDR]</button>
+                  <p><span class="bold">Mimansa Jaiswal</span>, Emily Mower Provost
+                  <!--<br>Interspeech 2020<br>-->
+                    <!--<a href="https://arxiv.org/pdf/1910.13212.pdf">Paper</a>-->
+                  </p></div>
+                <div class="content"> <p class="py-025"> <span class ="bold">TLDR: </span> Explanations and their efficacy depend on two major factors: (a) the algorithm used to generate the explanation, and, (b) the end user who is the receipient of the explanation. While many papers in NLP concentrate on generating explanations, there are multiple factors ignored when judging the utility of these explanations. In this paper, we majorly look at how efficacy of saliency based explanation methods for machine learning models trained to predict computational paralinguistic tasks, changes as a factor of other controlled variables. We aim to provide a standardized list of variables to control and check against when evaluating these explanations. We also show how the recently proposed SoTA algorithms can have significantly different rankings for a given task when the said evaluation criterion are controlled for.
+                </p> </div>
+              </li>
+
               <li>
                 <div class="collapsible">
-                  <p><span class="bold"> An Interpretation Framework for Explaining Models Trained for Computational Paralinguistic Tasks</span></p>
+                  <p><span class="bold"> An Interpretation Framework for Explaining Speech Based Models Trained for Computational Paralinguistic Tasks</span></p>
                   <button class="collapsible-btn">[TLDR]</button>
                   <p><span class="bold">Mimansa Jaiswal</span>, Emily Mower Provost
                   <!--<br>Interspeech 2020<br>-->
                     <!--<a href="https://arxiv.org/pdf/1910.13212.pdf">Paper</a>-->
                   </p></div>
                 <div class="content"> <p class="py-025"> <span class ="bold">TLDR: </span>Speech signals in particular are highly time varying and attention
-                  mechanisms that are generally used for interpretation might pick up discontinuous regions that are not human interpretable.
-                  In this paper, we propose a framework to attend to interpretation of speech signals for paralinguistic tasks.
-                  We then use this framework to generate textual explanations for the model prediction.
+                  mechanisms that are generally used for interpretation might pick up discontinuous regions that are not human interpretable. Speech spectrogram is also not visibly interpretable by humans, and needs us to extract robust features that correlate with what humans look at when identifying these paralinguistic tasks.
+                  In this paper, we propose a framework to attend to interpretation of speech signals for paralinguistic tasks. We look at various methods of discretizing speech signals and then using those features to obtain model understanding on three different levels, individual sample, individual user and the general population.
+                  We then use this framework to generate textual explanations that are faithful to the model internals, as well as are plausible to the end-user.
                 </p> </div>
               </li>
 
