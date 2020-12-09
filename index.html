@@ -30,7 +30,7 @@
         <div class="container about-inner">
           <div class="about-desc">
             <p class="pb-1">
-              I'm Mimansa, a third year <strong>PhD candidate</strong> in Computer Science (AI/Interactive Systems) at the <strong><a href="https://umich.edu/">University of Michigan</strong></a>. I am fortunate to be working with
+              I'm Mimansa, a fourth year <strong>PhD candidate</strong> in Computer Science (AI/Interactive Systems) at the <strong><a href="https://umich.edu/">University of Michigan</strong></a>. I am fortunate to be working with
               <a href="http://web.eecs.umich.edu/~emilykmp/" class="bold ">Prof. Emily Provost</a> as part of the
               <a href="http://web.eecs.umich.edu/~emilykmp/chai/index.html" > CHAI group</a>. I completed my undergrad in Computer Engineering from
               <a href="http://ietdavv.edu.in/" > Institute of Engineering and Technology, Indore</a>
@@ -84,7 +84,7 @@
               </p>
             </div>
           </div>
-          <img src="img/Mimansa.jpg" alt="Mimanas" />
+          <img src="img/Mimansa.jpg" alt="Mimansa" />
         </div>
       </section>
       <section id="updates" class="py-1">
@@ -93,10 +93,11 @@
             Updates
           </h1>
           <ul>
-            <li>[July 2020] <span style="color:red;font-weight: bold;">[New!]</span> I'll be attending ACL 2020 online. See you there!</li>
+            <!--<li>[July 2020] <span style="color:red;font-weight: bold;">[New!]</span>-->
+              <li>[Sep 2020] <span style="color:red;font-weight: bold;">[New!]</span> I have been chosen as the student representative for Faculty Hiring at my university for the 2020-21 season. Looking forward to knowing and communicating the "usually hidden" processes.</li>
             <li>[May 2020] <span style="color:red;font-weight: bold;">[New!]</span> Excited to be interning in the Conversation AI group at Facebook AI working on automated dialogue evaluation.</li>
-            <li>[Feb 2020] <span style="color:red;font-weight: bold;">[New!]</span> Our paper on Multimodal Stressed Emotion Dataset has been accepted to LREC 2020.</li>
-            <li>[Jan 2019] <span style="color:red;font-weight: bold;">[New!]</span> I'll be a teaching assistant for the course on <i>Applied Machine Learning for Affective Computing</i> with my advisor. So excited to be teaching for the first time!</li>
+            <li>[Feb 2020] Our paper on Multimodal Stressed Emotion Dataset has been accepted to LREC 2020.</li>
+            <li>[Jan 2019] I'll be a teaching assistant for the course on <i>Applied Machine Learning for Affective Computing</i> with my advisor. So excited to be teaching for the first time!</li>
             <li>[Dec 2019] I'll be attending NeuRIPS. Shoot me an email if you want to meet and talk about anything!</li>
           </ul>
         </div>
@@ -124,31 +125,40 @@
 
               <li>
                 <div class="collapsible">
-                  <p><span class="bold"> When and Why Should You Trust a Model is Private? Evaluating Shifts in Explanation of Privacy-Preserving NLP Models </span></p>
+                  <p><span class="bold"> Why Should I Trust a Model is Private? Using Shifts in Model Explanation for Evaluating Privacy-Preserving Emotion Recognition Model </span></p>
                   <button class="collapsible-btn">[TLDR]</button>
                   <p><span class="bold">Mimansa Jaiswal</span>, Emily Mower Provost
                   <!--<br>Interspeech 2020<br>-->
                     <!--<a href="https://arxiv.org/pdf/1910.13212.pdf">Paper</a>-->
                   </p></div>
-                <div class="content"> <p class="py-025"> <span class ="bold">TLDR: </span>We believe that understanding shifts in the interpretation of privacy preserving models can help us understand how
-                  models unlearn  chosen factors as compared to when not trained to preserve privacy, and if this focus  aligns  with  what  humans
-                  consider  important  to  learn those factors. This will help us inform better privacy modelling techniques such that the
-                  resultant models are trusted by humans.
+                <div class="content"> <p class="py-025"> <span class ="bold">TLDR: </span>Privacy preservation is a crucial component of any real-world application. In this paper, we concentrate on using interpretable methods to evaluate a model's efficacy to preserve privacy with respect to sensitive variables.
+                We focus on saliency-based explanations, explanations that highlight regions of the input text, which allows us to understand how model explanations shift when models are trained to preserve privacy.
+                We show how certain commonly-used methods that seek to preserve privacy might not align with human perception of privacy preservation. We also show how some of these induce spurious correlations in the model between the input and the primary as well as secondary task, even if the improvement in evaluation metric is significant. 
+                Such correlations can hence lead to false assurances about the perceived privacy of the model because especially when used in cross corpus conditions. 
+
+                 We conduct crowdsourcing experiments to evaluate the inclination of the evaluators to choose a particular model for a given task when model explanations are provided, and find that correlation of interpretation differences with sociolinguistic biases can be used as a proxy for user trust. 
                 </p> </div>
               </li>
 
               <li>
                 <div class="collapsible">
-                  <p><span class="bold"> Noise Based Augmentation of Emotion Datasets: What's ideal and What Isn't? </span></p>
+                  <p><span class="bold"> Best Practices for Noise-Based Augmentation to Improve the Performance of Emotion Recognition "In the Wild" </span></p>
                   <button class="collapsible-btn">[TLDR]</button>
                   <p><span class="bold">Mimansa Jaiswal</span>, Emily Mower Provost
                   <br>Interspeech 2020<br>
                     <!--<a href="https://arxiv.org/pdf/1910.13212.pdf">Paper</a>-->
                   </p></div>
-                <div class="content"> <p class="py-025"> <span class ="bold">TLDR: </span>Multiple noise-based data augmentation approaches have been proposed to counteract this challenge in other speech domains.
-                  But, unlike speech recognition and speaker verification, the underlying label of emotion data may change given the addition of noise.
-                  In this work, we propose a set of recommendations for noise-based augmentation of emotion datasets based on human and machine performance evaluation of
-                  generated realistic noisy samples using multiple categories of environmental and synthetic noise.</p> </div>
+                <div class="content"> <p class="py-025"> <span class ="bold">TLDR: </span>
+                Multiple noise-based data augmentation approaches have been proposed to counteract this challenge in other speech domains. 
+                But, unlike speech recognition and speaker verification, in emotion recognition, noise-based data augmentation may change the underlying label of the original emotional sample. 
+                In this work, we generate realistic noisy samples
+                of a well known emotion dataset (IEMOCAP)
+                using multiple categories of environmental and synthetic noise. 
+                
+                We evaluate how both human and machine emotion perception changes when noise is introduced. 
+                We find that some commonly used augmentation techniques for emotion recognition significantly change human perception, which may lead to unreliable evaluation metrics such as evaluating efficiency of adversarial attack.  
+                We also find that the trained state-of-the-art emotion recognition models fail to classify unseen noise-augmented samples, even when trained on noise augmented datasets.  
+                We propose a set of recommendations for noise-based augmentation of emotion datasets and for how to deploy these emotion recognition systems ``in the wild''.</p> </div>
               </li>
 
             </ul>
