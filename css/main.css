@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;515;600;700&display=swap");
+body {
+    font-size: 0.95rem;
+}
+
 .container {
   max-width: 1080px;
   padding: 0 1.5rem;
@@ -34,15 +38,15 @@
 }
 
 .heading-lg {
-  font-size: 2rem;
-}
-
-.heading-m {
   font-size: 1.65rem;
 }
 
-.heading-s {
+.heading-m {
   font-size: 1.35rem;
+}
+
+.heading-s {
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -147,7 +151,7 @@ header .header-inner nav ul li {
 }
 header .header-inner nav ul li a {
   color: #4f4350;
-  font-size: 1.2rem;
+  font-size: 1 rem;
   font-weight: 400;
   transition: all 0.5s;
   border-bottom: 3px solid transparent;
