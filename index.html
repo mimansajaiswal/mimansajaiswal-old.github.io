@@ -30,13 +30,18 @@
         <div class="container about-inner">
           <div class="about-desc">
             <p class="pb-1">
-              I'm Mimansa, a fourth year <strong>PhD candidate</strong> in Computer Science (AI/Interactive Systems) at the <strong><a href="https://umich.edu/">University of Michigan</strong></a>. I am fortunate to be working with
+              I'm Mimansa, a fifth year <strong>PhD candidate</strong> in Computer Science (AI/Interactive Systems) at the <strong><a href="https://umich.edu/">University of Michigan</strong></a>. I am fortunate to be working with
               <a href="http://web.eecs.umich.edu/~emilykmp/" class="bold ">Prof. Emily Provost</a> as part of the
               <a href="http://web.eecs.umich.edu/~emilykmp/chai/index.html" > CHAI group</a>. I completed my undergrad in Computer Engineering from
               <a href="http://ietdavv.edu.in/" > Institute of Engineering and Technology, Indore</a>
               in 2017, and worked with<a href="https://scholar.google.co.in/citations?user=lMpy-xQAAAAJ" class="bold "> Prof. G.L. Prajapati</a>
               for my bachelor's thesis.
             </p>
+            
+              <p>
+                <b>Tl;dr:</b> <b><i>I work in the area of developing interpretable and human imitating evaluation and cost-effective data collection procedures. Along with the research in my PhD, I have interned at <a href="https://allennlp.org/">Allen AI NLP</a>, <a href="https://ai.facebook.com/research/NLP">Facebook AI Research (FAIR) NLP</a>, and, <a href="https://ai.facebook.com/research/conversational-ai/">Facebook Research Conversational AI</a> conducting research on similar lines of interest.</i></b>
+              </p>
+            <br>
             <div class="contact-info">
               <a href="mailto:mimansa@umich.edu">mimansa@umich.edu</a>
               <!-- <span>||</span>
@@ -94,8 +99,10 @@
           </h1>
           <ul>
             <!--<li>[July 2020] <span style="color:red;font-weight: bold;">[New!]</span>-->
-              <li>[Sep 2020] <span style="color:red;font-weight: bold;">[New!]</span> I have been chosen as the student representative for Faculty Hiring at my university for the 2020-21 season. Looking forward to knowing and communicating the "usually hidden" processes.</li>
-            <li>[May 2020] <span style="color:red;font-weight: bold;">[New!]</span> Excited to be interning in the Conversation AI group at Facebook AI working on automated dialogue evaluation.</li>
+               <li>[Sep 2021] <span style="color:red;font-weight: bold;">[New!]</span> I am going to be interning this Fall in Allen AI with Ana Marasović in the area of evaluation and interpretability.</li>
+              <li>[May 2021] Excited to be interning in the FAIR NLP group this summer and looking forward to work at the intersection of Linguistics and ML.</li>
+              <li>[Sep 2020] I have been chosen as the student representative for Faculty Hiring at my university for the 2020-21 season. Looking forward to knowing and communicating the "usually hidden" processes.</li>
+            <li>[May 2020] Excited to be interning in the Conversation AI group at Facebook AI working on automated dialogue evaluation.</li>
             <li>[Feb 2020] Our paper on Multimodal Stressed Emotion Dataset has been accepted to LREC 2020.</li>
             <li>[Jan 2019] I'll be a teaching assistant for the course on <i>Applied Machine Learning for Affective Computing</i> with my advisor. So excited to be teaching for the first time!</li>
             <li>[Dec 2019] I'll be attending NeuRIPS. Shoot me an email if you want to meet and talk about anything!</li>
@@ -106,7 +113,7 @@
         <div class="container publications-inner">
           <h1 class="heading-m"> Publications</h1>
           <div class="submitted">
-            <h2 class="heading-s ml-1">Submitted papers</h2>
+            <h2 class="heading-s ml-1">Work in Progress</h2>
             <ul>
                 <li>
                 <div class="collapsible">
@@ -134,20 +141,22 @@
                   We then use this framework to generate textual explanations that are faithful to the model internals, as well as are plausible to the end-user.
                 </p> </div>
               </li>
+            </ul>
+            <h2 class="heading-s ml-1">Submitted Papers</h2>
+            <ul>
 
               <li>
                 <div class="collapsible">
-                  <p><span class="bold"> Why Should I Trust a Model is Private? Using Shifts in Model Explanation for Evaluating Privacy-Preserving Emotion Recognition Model </span></p>
+                  <p><span class="bold"> Human-Imitating Metrics for Training and Evaluating Privacy Preserving Emotion Recognition Models Using Sociolinguistic Knowledge </span></p>
                   <button class="collapsible-btn">[TLDR]</button>
                   <p><span class="bold">Mimansa Jaiswal</span>, Emily Mower Provost
+                    <br>
+                   <a href="https://arxiv.org/abs/2104.08792">Paper</a>
                   <!--<br>Interspeech 2020<br>-->
                     <!--<a href="https://arxiv.org/pdf/1910.13212.pdf">Paper</a>-->
                   </p></div>
-                <div class="content"> <p class="py-025"> <span class ="bold">TLDR: </span>Privacy preservation is a crucial component of any real-world application. In this paper, we concentrate on using interpretable methods to evaluate a model's efficacy to preserve privacy with respect to sensitive variables.
-                
-               We also show how some of these induce spurious correlations in the model between the input and the primary as well as secondary task, even if the improvement in evaluation metric is significant. 
-                
-                 We conduct crowdsourcing experiments to evaluate the inclination of the evaluators to choose a particular model for a given task when model explanations are provided, and find that correlation of interpretation differences with sociolinguistic biases can be used as a proxy for user trust. 
+                <div class="content"> <p class="py-025"> <span class ="bold">TLDR: </span>
+                  Privacy preservation is a crucial component of any real-world application. But, in applications relying on machine learning backends, privacy is challenging because models often capture more than what the model was initially trained for, resulting in the potential leakage of sensitive information. In this paper, we propose an automatic and quantifiable metric that allows us to evaluate humans' perception of a model's ability to preserve privacy with respect to sensitive variables. In this paper, we focus on saliency-based explanations, explanations that highlight regions of the input text, to infer internal workings of a black box model. We use the degree with which differences in interpretation of general vs privacy preserving models correlate with sociolinguistic biases to inform metric design. We show how certain commonly-used methods that seek to preserve privacy do not align with human perception of privacy preservation leading to distrust about model's claims. We demonstrate the versatility of our proposed metric by validating its utility for measuring cross corpus generalization for both privacy and emotion. Finally, we conduct crowdsourcing experiments to evaluate the inclination of the evaluators to choose a particular model for a given purpose when model explanations are provided, and show a positive relationship with the proposed metric. To the best of our knowledge, we take the first step in proposing automatic and quantifiable metrics that best align with human perception of model's ability for privacy preservation, allowing for cost-effective model development.
                 </p> </div>
               </li>
 
@@ -156,6 +165,8 @@
                   <p><span class="bold"> Best Practices for Noise-Based Augmentation to Improve the Performance of Emotion Recognition "In the Wild" </span></p>
                   <button class="collapsible-btn">[TLDR]</button>
                   <p><span class="bold">Mimansa Jaiswal</span>, Emily Mower Provost
+                      <br>
+                   <a href="https://arxiv.org/abs/2104.08806">Paper</a>
                   <!--<br>Interspeech 2020<br>-->
                     <!--<a href="https://arxiv.org/pdf/1910.13212.pdf">Paper</a>-->
                   </p></div>
@@ -341,6 +352,46 @@
 
               <li>
                 <div class="experience-col" >
+                  <img src="img/ai2.png" alt="AI2"/>
+                  <div class="experience-informations">
+                      <p>
+                        <span class="bold"><a href="https://allennlp.org/">Allen NLP</a>, <a href="https://allenai.org/">Allen Institute of Artificial Intelligence</a></span>
+                      </p>
+                      <p>
+                        Research Intern, Sept 2021 - Dec 2021
+                      </p>
+                      <p>
+                        Mentor: <a href="https://www.anamarasovic.com/">Ana Marasović</a>
+                      </p>
+                      <p>
+                        Topic: Defining interpretable and generalizable user satisfaction metric informed by human knowledge
+                      </p>
+                  </div>
+                </div>
+              </li>
+
+                <li>
+                <div class="experience-col" >
+                  <img src="img/fair.png" alt="FAIR" />
+                  <div class="experience-informations">
+                      <p>
+                        <span class="bold"><a href="https://ai.facebook.com/research/NLP">NLP Team</a>, <a href="https://ai.facebook.com/research/">Facebook AI Research</a></span>
+                      </p>
+                      <p>
+                        Research Intern, May 2021 - August 2021
+                      </p>
+                      <p>
+                        <b>Mentor:</b> <a href="https://wp.nyu.edu/adinawilliams/"><b>Adina Williams</b></a>; <b>Peers:</b> <a href="http://scottyih.org/">Scott Williams</a>, <a href="https://www.pedro.ai/">Pedro Rogieruez</a>
+                      </p>
+                      <p>
+                        Topic: Defining interpretable and generalizable user satisfaction metric informed by human knowledge
+                      </p>
+                  </div>
+                </div>
+              </li>
+
+                <li>
+                <div class="experience-col" >
                   <img src="img/facebook-research.png" alt="FBAI" />
                   <div class="experience-informations">
                       <p>
@@ -350,7 +401,7 @@
                         Research Intern, May 2020 - August 2020
                       </p>
                       <p>
-                        Mentor: <a href="https://sites.google.com/view/beirami" >Ahmad Beirami</a>
+                        <b>Mentor:</b> <a href="https://sites.google.com/view/beirami" >Ahmad Beirami</a>; <b>Peers:</b> <a href="https://shanemoon.com/">Shane Moon</a>, <a href="https://www.pedro.ai/">Satwik Kottur</a>, <a href="https://chinnadhurai.github.io/">Chinnadhurai Sankar</a>
                       </p>
                       <p>
                         Topic: Defining interpretable and generalizable user satisfaction metric informed by human knowledge
@@ -364,13 +415,13 @@
                   <img src="img/NTU_logo.jpg" alt="NTU, Singapore"/>
                   <div class="experience-informations">
                       <p>
-                        <span class="bold"><a href="https://sentic.net/">SENTIC Lab</a>, Nanyang Technological University, Singapore</span>
+                        <span class="bold"><a href="https://sentic.net/">SENTIC Lab</a>, <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, Singapore</span>
                       </p>
                       <p>
                         Research Intern, April 2016 - July 2016
                       </p>
                       <p>
-                        Mentor: <a href="https://sentic.net/erikcambria/" >Prof. Erik Cambria</a>
+                        <b>Mentor:</b> <a href="https://sentic.net/erikcambria/" >Prof. Erik Cambria</a>
                       </p>
                       <p>
                         Topic: Multimodal detection of human behavior: empathy and deception
@@ -389,7 +440,7 @@
                         Research Intern, December 2015 - February 2016
                       </p>
                       <p>
-                        Mentor: <a href="https://www.iis.sinica.edu.tw/pages/lwku/" >Prof. Lun-Wei Ku</a>
+                        <b>Mentor:</b> <a href="https://www.iis.sinica.edu.tw/pages/lwku/" >Prof. Lun-Wei Ku</a>
                       </p>
                       <p>
                         Topic: Human perception of conversation sentiment visualization in chat interfaces
@@ -408,7 +459,7 @@
                         Research Intern, May 2015 - July 2015
                       </p>
                       <p>
-                        Mentor: <a href="https://www.iiitd.edu.in/~praveshb/" >Prof. Pravesh Biyani</a>
+                        <b>Mentor:</b> <a href="https://www.iiitd.edu.in/~praveshb/" >Prof. Pravesh Biyani</a>
                       </p>
                       <p>
                         Topic: Finding the optimal routes under user specified user-constraints for last mile cab-pooling
@@ -464,7 +515,7 @@
                     <a href="https://youtu.be/rhVhR22t2IE"
                       >Sentiment Analysis, its techniques and applications</a
                     >
-                    [June2016]
+                    [June 2016]
 
                 </li>
               </ul>
